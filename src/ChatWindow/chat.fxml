@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ChatWindow.Chat"
+            prefHeight="350.0" prefWidth="350.0">
+    <center>
+        <TextArea fx:id="textArea" prefRowCount="25" editable="false"/>
+    </center>
+    <bottom>
+        <AnchorPane>
+            <TextField fx:id="textField" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="75" onAction="#send"/>
+            <Button text="Send" AnchorPane.rightAnchor="0" onAction="#send"/>
+        </AnchorPane>
+    </bottom>
+</BorderPane>

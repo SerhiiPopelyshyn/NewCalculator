@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import Calculator.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefWidth="300" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Calculator.Controller">
+    <stylesheets>
+        <URL value="@/Calculator/style.css" />
+    </stylesheets>
+
+    <TextField fx:id="fullTextField" alignment="CENTER" editable="false" style="-fx-font-size: 20" GridPane.ColumnSpan="4" GridPane.rowIndex="1" />
+    <TextField fx:id="textField" alignment="CENTER_RIGHT" editable="false" style="-fx-font-weight: bold; -fx-font-size: 50" text="0" GridPane.ColumnSpan="5" GridPane.rowIndex="0" />
+
+    <Button onAction="#cClick" styleClass="numberButton" text="C" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <Button fx:id="numberButton" onAction="#delClick" text="←" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+    <Button onAction="#plusClick" styleClass="funcButton" text="+" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+    <Button onAction="#minusClick" styleClass="funcButton" text="-" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+    <Button onAction="#multiplyClick" styleClass="funcButton" text="*" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+    <Button onAction="#divideClick" styleClass="funcButton" text="/" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+
+    <NumButton number="7" onAction="#numberClick" styleClass="numberButton" text="7" GridPane.rowIndex="6" />
+    <NumButton number="8" onAction="#numberClick" styleClass="numberButton" text="8" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+    <NumButton number="9" onAction="#numberClick" styleClass="numberButton" text="9" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+    <NumButton number="4" onAction="#numberClick" styleClass="numberButton" text="4" GridPane.rowIndex="7" />
+    <NumButton number="5" onAction="#numberClick" styleClass="numberButton" text="5" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+    <NumButton number="6" onAction="#numberClick" styleClass="numberButton" text="6" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+    <NumButton number="1" onAction="#numberClick" styleClass="numberButton" text="1" GridPane.rowIndex="8" />
+    <NumButton number="2" onAction="#numberClick" styleClass="numberButton" text="2" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+    <NumButton number="3" onAction="#numberClick" styleClass="numberButton" text="3" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+    <NumButton number="0" onAction="#numberClick" GridPane.columnSpan="2" styleClass="numberButton" text="0" GridPane.rowIndex="9" />
+    <Button onAction="#dotClick" styleClass="funcButton" text="," GridPane.columnIndex="4" GridPane.rowIndex="4" />
+    <Button fx:id="equalsBtn" onAction="#equalsClick" text="=" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+
+</GridPane>
